@@ -23,3 +23,14 @@ Document [HERE](https://docs.vapor.build/1.0/introduction.html#installing-the-va
   `php artisan vendor:publish --tag=vapor-ui-config`
 
 ## Slack Notification Integration
+
+https://panjeh.medium.com/send-laravel-6-log-to-slack-notification-573a6d95a14e
+
+# Laravel Jetstream Installation with livewire
+https://jetstream.laravel.com/2.x/installation.html
+
+  `composer require laravel/jetstream`
+  `npm install`
+  `npm run build`
+  `php artisan migrate`
+  `php artisan vendor:publish --tag=jetstream-views`

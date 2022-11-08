@@ -21,3 +21,13 @@ Route::get('/slack', function () {
     \Illuminate\Support\Facades\Log::critical('Critical logs will be sent to to Slack Chanel');
     return true;
 });
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
