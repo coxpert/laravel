@@ -21,3 +21,5 @@ Document [HERE](https://docs.vapor.build/1.0/introduction.html#installing-the-va
   Add test email to VaporUIProvider for access to Vapor UI dashboard.
 - Customizing Middleware
   `php artisan vendor:publish --tag=vapor-ui-config`
+
+## Slack Notification Integration

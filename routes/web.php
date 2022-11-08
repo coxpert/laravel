@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/slack', function () {
+    \Illuminate\Support\Facades\Log::critical('Critical logs will be sent to to Slack Chanel');
+    return true;
+});
