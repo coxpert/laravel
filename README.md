@@ -34,3 +34,10 @@ https://jetstream.laravel.com/2.x/installation.html
   `npm run build`
   `php artisan migrate`
   `php artisan vendor:publish --tag=jetstream-views`
+
+# Make Default Account.
+- Create User Seeder
+  `php artisan make:seed UserSeeder`
+- Register User Seeder to DatabaseSeeder class
+- Run seed
+  `php artisan db:seed`
