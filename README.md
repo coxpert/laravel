@@ -41,3 +41,12 @@ https://jetstream.laravel.com/2.x/installation.html
 - Register User Seeder to DatabaseSeeder class
 - Run seed
   `php artisan db:seed`
+
+# Deploy Project
+- Create Vapor Account.
+- Add AWS credential
+- Create new project on Vapor
+- Create vapor.yml file
+- Deploy project
+  `vapor deploy production`
+
