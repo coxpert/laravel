@@ -19,8 +19,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post("/test", function (Request $request) {
+    logger("API Request received.");
     return [
+        "requestId" => env('AWS_REQUEST_ID', null),
+        "multiValueHeaders" => $request->header("multiValueHeaders"),
         "headers" => $request->headers,
-        "data" => $request->all()
+        "data" => $request->all(),
+        "request" => $request
     ];
 });

@@ -50,3 +50,13 @@ https://jetstream.laravel.com/2.x/installation.html
 - Deploy project
   `vapor deploy production`
 
+# [Setup Sentry Logo](https://docs.sentry.io/platforms/php/guides/laravel/)
+- Install Sentry
+  `composer require sentry/sentry-laravel`
+- register
+  App/Exceptions/Handler.php
+- Publish vendor (it will generate config/sentry.php file)
+  `php artisan vendor:publish --provider="Sentry\Laravel\ServiceProvider"`
+- [set env SENTRY_DSN](https://sentry.io/settings/individual-hm/projects/php-laravel/keys/)
+- Test (it will send test error log to Sentry, you will be able to see test logs in you sentry account dashboard.)
+  `php artisan sentry:test`
