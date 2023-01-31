@@ -1,0 +1,10 @@
+id: 40521
+name: bizinaboxsite
+separate-vendor: true
+environments:
+  production:
+    memory: 1024
+    timeout: 28
+    cli-memory: 512
+    cli-timeout: 600
+    runtime: docker
