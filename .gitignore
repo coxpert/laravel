@@ -17,3 +17,6 @@ yarn-error.log
 /.idea
 /.vscode
 /.vapor
+.env.dev
+.vapor/
+.env.staging
